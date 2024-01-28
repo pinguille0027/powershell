@@ -1,0 +1,6 @@
+FOL
+SI
+PROG
+LM
+0_comun
+0_comun_privado

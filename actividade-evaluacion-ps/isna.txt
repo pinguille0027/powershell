@@ -1,0 +1,6 @@
+FOL
+SOR
+SOM
+MME
+0_comun
+0_comun_privado

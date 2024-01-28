@@ -1,0 +1,6 @@
+FOL
+ISO
+ASO
+FH
+0_comun
+0_comun_privado

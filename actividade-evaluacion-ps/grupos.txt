@@ -1,0 +1,5 @@
+iana
+isna
+iwna
+idna
+iibna
