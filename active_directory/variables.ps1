@@ -1,1 +1,1 @@
-$listadoOUs=./Unidades-Organizativas-Xilgaro-XX.csv
+$listadoOUs=".\Unidades-Organizativas-Xilgaro-XX.csv"
