@@ -1,7 +1,7 @@
 if ( Get-Item ".\variables.ps1" -ErrorAction SilentlyContinue) {
     . "./variables.ps1"
     Import-Csv -Path $listadoOUs -Delimiter : | ForEach-Object {
-        if (Get-ADOrganizationalUnit -Identity $("OU=" + $_.OU + "," + $_.Path) -ErrorAction SilentlyContinue) {
+        if (Get-ADOrganizationalUnit -Filter "distinguishedName -eq '$("OU=" + $_.OU + "," + $_.Path)'" -ErrorAction SilentlyContinue) {
             Write-Host "la UO $($_.OU) ya existe"
         }
         else {
