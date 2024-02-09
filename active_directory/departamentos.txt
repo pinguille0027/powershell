@@ -1,4 +1,4 @@
-FOL
+﻿FOL
 Galego
 Informática
 Matemáticas
