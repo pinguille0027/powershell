@@ -17,6 +17,8 @@ if ( Get-Item ".\variables.ps1" -ErrorAction SilentlyContinue) {
                     -Company "IES XIlgaro"`
                     -EmailAddress $($($_.login) + "@" + $($($nombreDominio).toLower())) `
                     -Description "Alumno de $($_.grupo)" `
+                    -StreetAddress "$($_.enderezo)" `
+                    -City "$($_.concello)" `
                     -Path $("OU=" + $($_.grupo) + "," + $gruposPrincipales[2].ruta)`
                     -Type "user"`
                     -UserPrincipalName $($($_.login) + "@" + $($nombreDominio))`
