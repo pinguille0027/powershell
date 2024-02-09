@@ -35,15 +35,15 @@ if ( Get-Item ".\variables.ps1" -ErrorAction SilentlyContinue) {
             }
             $i = $i + 1
             $progreso = $($i / $usuarios.count) * 100
-            Write-Progress -Activity "Creando los directorios de los usuarios" -Status "Progreso:" -PercentComplete $progreso
+            Write-Progress -Activity "Creando los usuarios de los Alumnos" -Status "Progreso:" -PercentComplete $progreso
         } -End {
             Write-Host "operacion finalizada"
             if ($usuariosPrexistentes -ne "") {
-                Write-Host "los directorios de los siguientes usuarios no se crearon porque ya exitian:
+                Write-Host "los siguientes usuarios no se crearon porque ya exitian:
                 $usuariosPrexistentes"
             }
             if ($usuariosFallidos -ne "") {
-                Write-Host "los directorios de los siguientes usuarios no se pudieron crear por algún otro motivo (ej: nombre invalido) :
+                Write-Host "los siguientes usuarios no se pudieron crear por algún otro motivo (ej: nombre invalido) :
                 $usuariosFallidos"
             }
         }
